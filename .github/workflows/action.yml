@@ -1,4 +1,6 @@
-on: push
+on:
+  schedule:
+    - cron: "0 * * * *" # every hour
 
 env:
   UPDATE_GUTENBERG_PR_GITHUB_TOKEN: ${{ secrets.UPDATE_GUTENBERG_PR_GITHUB_TOKEN }}
